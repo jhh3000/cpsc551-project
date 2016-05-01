@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.brown-blue.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.brown-indigo.min.css">
     <style>
 	    body {
 	    	font-family: "Roboto","Helvetica","Arial",sans-serif;
@@ -91,6 +91,20 @@
 	    	font-size: 28px;
 	    	line-height: 32px;
 	    }
+	    .body-container p.caption {
+	    	font-size: 12px;
+	    	line-height: 12px;
+	    	text-align: center;
+	    }
+	    .body-container p.caption span {
+	    	display: block;
+	    	padding-top: 8px;
+	    	padding-left: 24px;
+	    	padding-right: 24px;
+	    }
+	    .body-container p.caption span.text-active {
+	    	color: rgba(83, 109, 254, 1);
+	    }
 
 	    .footer-container {
 	    	padding: 5px;
@@ -99,6 +113,25 @@
 	    	text-align: center;
 	    	padding-top: 3px;
 	    	padding-bottom: 3px;
+	    }
+
+	    p.inactive img {
+	    	border-width: 5px;
+	    	border-color: rgba(0,0,0,1);
+	    	border-style: solid;
+	    }
+	    p.active img {
+	    	border-width: 5px;
+	    	border-color: rgba(83, 109, 254, 1);
+	    	border-style: solid;
+	    }
+	    p.active {
+	    	position: relative;
+	    }
+	    p.active button {
+		    position: absolute;
+		    bottom: 27px;
+		    right: -27px;
 	    }
     </style>
   </head>
@@ -125,6 +158,18 @@
 
     	<div class="body-container">
     		<p>Hypercar is a relatively new term in the marketplace. This term refers to any car that has an immense amount of horsepower, and will outshine any mundane “supercar” in both handling and acceleration.</p>
+    		<p class="caption inactive">
+    			<img src="http://www.hispotion.com/wp-content/uploads/2014/05/Mazzanti-Evantra-V8-71-600x401.jpg" width="426" />
+    			<span>Mazzanti Evantra V8. The Mazzanti was known for its eccentric styling.</span>
+    		</p>
+    		<p class="caption active">
+    			<img src="http://www.hispotion.com/wp-content/uploads/2014/05/Porsche-Gt9-R-3-600x400.jpg" width="426" />
+    			<span>Porsche Gt9-R3. The first unibody monocoque Porsche car built completely from carbon fiber</span>
+    			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
+    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+					  <i class="material-icons">add</i>
+					</button>
+    		</p>
     		<p>Often mistaken for supercars, these vehicles outperform in so many ways, and not just the price tag. This book will go through each category of hypercar, and what sets them apart.</p>
     	</div>
 
