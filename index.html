@@ -31,6 +31,7 @@
     	font-family: "Roboto","Helvetica","Arial",sans-serif;
     	font-weight: 400;
     }
+
 		.ebook-container {
     	margin: 0 auto;
     	margin-top: 50px;
@@ -38,9 +39,14 @@
     	max-width: 500px;
     	background-color: rgba(228, 224, 207, 1);
     }
-    .ebook-container .topnav-container {
+    .topnav-container, .footer-container {
     	background-color: rgba(53, 26, 13, 1);
     	color: rgba(228, 224, 207, 1);
+    }
+
+    .topnav-container {
+    	padding-top: 5px;
+    	padding-bottom: 5px;
     }
     .topnav-container .left {
     	display: inline-block;
@@ -75,14 +81,31 @@
     .topnav-container .text .bottom {
     	font-size: 16px;
     }
+
+    .body-container {
+    	margin: 24px;
+    	padding-left: 8px;
+    	padding-right: 8px;
+    	font-size: 28px;
+    	line-height: 32px;
+    }
+
+    .footer-container {
+    	padding: 5px;
+    }
+    .footer-container .text {
+    	text-align: center;
+    	padding-top: 3px;
+    	padding-bottom: 3px;
+    }
     </style>
   </head>
 
   <body>
 
     <div class="ebook-container mdl-shadow--2dp">
-    	<div class="topnav-container mdl-shadow--2dp">
 
+    	<div class="topnav-container mdl-shadow--2dp">
 				  <div class="left">
 				  	<i class="material-icons">menu</i>
 				  	<div class="text">
@@ -96,9 +119,20 @@
 				  	<i class="material-icons">search</i>
 				  	<i class="material-icons more_icon_vert">more_vert</i>
 				  </div>
-
     	</div>
-    	asdf
+
+    	<div class="body-container">
+    		Hypercar is a relatively new term in the marketplace. This term refers to any car that has an immense amount of horsepower, and will outshine any mundane “supercar” in both handling and acceleration. Often mistaken for supercars, these vehicles outperform in so many ways, and not just the price tag. This book will go through each category of hypercar, and what sets them apart.
+    	</div>
+
+    	<div class="footer-container mdl-shadow--2dp">
+    		<div class="text">25 / 98 Chapter 3</div>
+    		<div class="text">
+    			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0">
+    		</div>
+    		<div class="text">TABLE OF CONTENTS</div>
+    	</div>
+
     </div>
 
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
