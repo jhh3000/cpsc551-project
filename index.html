@@ -139,6 +139,21 @@
 		    bottom: 27px;
 		    right: -27px;
 	    }
+
+	    .level-2 {
+		    padding-left: 32px;
+		    padding-right: 32px;
+		    margin-left: -32px;
+		    margin-right: -32px;
+		    display: none;
+	    }
+	    .level-3 {
+		    padding-left: 32px;
+		    padding-right: 32px;
+		    margin-left: -32px;
+		    margin-right: -32px;
+		    display: none;
+	    }
     </style>
   </head>
 
@@ -174,57 +189,62 @@
     			<img src="img/Porsche-Gt9-R-3-600x400.jpg" />
     			<span>Porsche Gt9-R3. The first unibody monocoque Porsche car built completely from carbon fiber</span>
     			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
-    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+    			<button id="expand-1" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
 					  <i class="material-icons">add</i>
 					</button>
     		</p>
 
 	    		<!-- LEVEL 2 -->
-	    		<p class="caption inactive" style="width: 141px;">
-	    			<img src="img/Venom-GT-WFE-9-600x448.jpg" />
-	    			<span>Porsche Gt9-R3 Aerial View</span>
-	    		</p>
-	    		<p class="caption active" style="width: 290px;">
-	    			<img src="img/9FF-GT9-R-6.jpg" />
-	    			<span>Porsche Gt9-R3, Racing Spec</span>
-	    			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
-	    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-						  <i class="material-icons">add</i>
-						</button>
-	    		</p>
-
-		    		<!-- LEVEL 3 START -->
-		    		<p class="caption inactive" style="width: 198px;">
-		    			<img src="img/KOENIGSEGG-ONE-1-2.jpg" />
+    			<div class="level-2">
+		    		<p class="caption inactive" style="width: 141px;">
+		    			<img src="img/Venom-GT-WFE-9-600x448.jpg" />
 		    			<span>Porsche Gt9-R3 Aerial View</span>
 		    		</p>
-		    		<p class="caption active" style="width: 233px;">
-		    			<img src="img/KOENIGSEGG-ONE-1-6.jpg" />
+		    		<p class="caption active" style="width: 290px;">
+		    			<img src="img/9FF-GT9-R-6.jpg" />
 		    			<span>Porsche Gt9-R3, Racing Spec</span>
 		    			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
-		    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+		    			<button id="expand-2" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
 							  <i class="material-icons">add</i>
 							</button>
 		    		</p>
-		    		<p class="caption inactive" style="width: 216px;">
-		    			<img src="img/KOENIGSEGG-ONE-1-3.jpg" />
-		    			<span>Porsche Gt9-R3 Aerial View</span>
-		    		</p>
-		    		<p class="caption inactive" style="width: 216px;">
-		    			<img src="img/KOENIGSEGG-ONE-1-5.jpg" />
-		    			<span>Porsche Gt9-R3 Aerial View</span>
-		    		</p>
-		    		<!-- LEVEL 3 END -->
 
-	    		<p class="caption inactive" style="width: 215px;">
-	    			<img src="img/9FF-GT9-R-1.jpg" />
-	    			<span>Porsche Gt9-R3, Road Car</span>
-	    		</p>
-	    		<p class="caption inactive" style="width: 216px;">
-	    			<img src="img/9FF-GT9-R-11.jpg" />
-	    			<span>Porsche Gt9-R3, With Rear Diffuser and Wing</span>
-	    		</p>
+			    		<!-- LEVEL 3 START -->
+			    		<div class="level-3">
+				    		<p class="caption inactive" style="width: 198px;">
+				    			<img src="img/KOENIGSEGG-ONE-1-2.jpg" />
+				    			<span>Porsche Gt9-R3 Aerial View</span>
+				    		</p>
+				    		<p class="caption active" style="width: 233px;">
+				    			<img src="img/KOENIGSEGG-ONE-1-6.jpg" />
+				    			<span>Porsche Gt9-R3, Racing Spec</span>
+				    			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
+				    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+									  <i class="material-icons">add</i>
+									</button>
+				    		</p>
+				    		<p class="caption inactive" style="width: 216px;">
+				    			<img src="img/KOENIGSEGG-ONE-1-3.jpg" />
+				    			<span>Porsche Gt9-R3 Aerial View</span>
+				    		</p>
+				    		<p class="caption inactive" style="width: 216px;">
+				    			<img src="img/KOENIGSEGG-ONE-1-5.jpg" />
+				    			<span>Porsche Gt9-R3 Aerial View</span>
+				    		</p>
+			    		</div>
+			    		<!-- LEVEL 3 END -->
+
+		    		<p class="caption inactive" style="width: 215px;">
+		    			<img src="img/9FF-GT9-R-1.jpg" />
+		    			<span>Porsche Gt9-R3, Road Car</span>
+		    		</p>
+		    		<p class="caption inactive" style="width: 216px;">
+		    			<img src="img/9FF-GT9-R-11.jpg" />
+		    			<span>Porsche Gt9-R3, With Rear Diffuser and Wing</span>
+		    		</p>
+	    		</div>
 	    		<!-- LEVEL 2 END -->
+
     		<!-- LEVEL 1 END -->
 
     		<p>Often mistaken for supercars, these vehicles outperform in so many ways, and not just the price tag. This book will go through each category of hypercar, and what sets them apart.</p>
@@ -241,6 +261,15 @@
     </div>
 
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script>
+    	$("#expand-1").click(function() {
+    		$(".level-2").slideToggle();
+    	});
+    	$("#expand-2").click(function() {
+    		$(".level-3").slideToggle();
+    	});
+    </script>
   </body>
 
 </html>
