@@ -140,19 +140,16 @@
 		    right: -27px;
 	    }
 
-	    .level-2 {
+	    .level-2, .level-3 {
 		    padding-left: 32px;
 		    padding-right: 32px;
 		    margin-left: -32px;
 		    margin-right: -32px;
 		    display: none;
 	    }
-	    .level-3 {
-		    padding-left: 32px;
-		    padding-right: 32px;
-		    margin-left: -32px;
-		    margin-right: -32px;
-		    display: none;
+
+	    #expand-1, #expand-2, #expand-3 {
+	    	cursor: pointer;
 	    }
     </style>
   </head>
@@ -185,11 +182,11 @@
     			<img src="img/Mazzanti-Evantra-V8-71-600x401.jpg" />
     			<span>Mazzanti Evantra V8. The Mazzanti was known for its eccentric styling.</span>
     		</p>
-    		<p class="caption active">
+    		<p class="caption active" id="expand-1">
     			<img src="img/Porsche-Gt9-R-3-600x400.jpg" />
     			<span>Porsche Gt9-R3. The first unibody monocoque Porsche car built completely from carbon fiber</span>
     			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
-    			<button id="expand-1" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
 					  <i class="material-icons">add</i>
 					</button>
     		</p>
@@ -200,11 +197,11 @@
 		    			<img src="img/Venom-GT-WFE-9-600x448.jpg" />
 		    			<span>Porsche Gt9-R3 Aerial View</span>
 		    		</p>
-		    		<p class="caption active" style="width: 290px;">
+		    		<p class="caption active" style="width: 290px;" id="expand-2">
 		    			<img src="img/9FF-GT9-R-6.jpg" />
 		    			<span>Porsche Gt9-R3, Racing Spec</span>
 		    			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
-		    			<button id="expand-2" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+		    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
 							  <i class="material-icons">add</i>
 							</button>
 		    		</p>
@@ -215,7 +212,7 @@
 				    			<img src="img/KOENIGSEGG-ONE-1-2.jpg" />
 				    			<span>Porsche Gt9-R3 Aerial View</span>
 				    		</p>
-				    		<p class="caption active" style="width: 233px;">
+				    		<p class="caption active" style="width: 233px;" id="expand-3">
 				    			<img src="img/KOENIGSEGG-ONE-1-6.jpg" />
 				    			<span>Porsche Gt9-R3, Racing Spec</span>
 				    			<span class="text-active">>> tap the photo or + symbol to see more of this style of car <<</span>
